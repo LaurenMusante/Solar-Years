@@ -22,8 +22,7 @@ Sample input/output:
 | :----: | :----: | :----: | :----: | :----: |
 |72 | 300.00 | 116.12 | 38.29 | 6.07
 
-Calculates how much time the user has left to live.
-* _Based on Continental Life Expectancy_
+Calculates how much time the user has left to live, based on Continental Life Expectancy
 
 Sample input (Continental Residence and Age in Earth Years)/output:
 
