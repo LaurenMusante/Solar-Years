@@ -10,6 +10,8 @@ _This app will take a user's age in Earth years and convert it to their age in M
 
 ## Specs
 
+Does not accept letter values as input.
+
 Takes user age in Earth years and converts to:
 * _Age in Mercury years_
 * _Age in Venus Years_

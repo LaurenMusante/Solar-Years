@@ -13,3 +13,23 @@ checkValidity() {
     }
   }
 };
+export function calcMercuryAge(Earthage) {
+  let age = parseInt($('input:text').val());
+  let mercuryAge = (age / 0.24);
+  return mercuryAge;
+}
+export function calcVenusAge(Earthage) {
+  let age = parseInt($('input:text').val());
+  let mercuryAge = (age / 0.62);
+  return venusAge;
+}
+export function calcMarsAge(Earthage) {
+  let age = parseInt($('input:text').val());
+  let mercuryAge = (age / 1.88 );
+  return marsAge;
+}
+export function calcJupiterAge(Earthage) {
+  let age = parseInt($('input:text').val());
+  let mercuryAge = (age / 11.86);
+  return jupiterAge;
+}
