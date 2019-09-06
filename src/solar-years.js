@@ -37,6 +37,7 @@ export function calcJupiterAge() {
 $(document).ready(function(){
   $("form#ageContinent").submit(function(event){
     event.preventDefault();
+
 let africa = $("select[value=africa"] option:selected").val();
 let asia = $("select[value=asia"] option:selected").val();
 let europe = $("select[value=europe"] option:selected").val();
@@ -59,6 +60,27 @@ if (africa) {
   lifeExpectancy += 78
 };
 
-function timeRemaining() {
-  
+function remainingYears() {
+  let timeRemaining = ("lifeExpectancy" - "age")
+};
+remainingYears(age);
+
+function mercuryTimeRemaining() {
+  timeRemaining/0.24
+};
+mercuryTimeRemaining(timeremaining);
+
+function venusTimeRemaining() {
+  timeRemaining/0.62
+};
+venusTimeRemaining(timeremaining);
+
+function marsTimeRemaining() {
+  timeRemaining/1.88
 }
+marsTimeReamining(timeremaining);
+
+function jupiterTimeRemaining() {
+  timeRemaining/11.86
+}
+jupiterTimeRemaining(timeremaining);
