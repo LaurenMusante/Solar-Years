@@ -13,23 +13,52 @@ checkValidity() {
     }
   }
 };
-export function calcMercuryAge(Earthage) {
+export function calcMercuryAge() {
   let age = parseInt($('input:text').val());
   let mercuryAge = (age / 0.24);
   return mercuryAge;
 }
-export function calcVenusAge(Earthage) {
+export function calcVenusAge() {
   let age = parseInt($('input:text').val());
   let mercuryAge = (age / 0.62);
   return venusAge;
 }
-export function calcMarsAge(Earthage) {
+export function calcMarsAge() {
   let age = parseInt($('input:text').val());
   let mercuryAge = (age / 1.88 );
   return marsAge;
 }
-export function calcJupiterAge(Earthage) {
+export function calcJupiterAge() {
   let age = parseInt($('input:text').val());
   let mercuryAge = (age / 11.86);
   return jupiterAge;
+}
+
+$(document).ready(function(){
+  $("form#ageContinent").submit(function(event){
+    event.preventDefault();
+let africa = $("select[value=africa"] option:selected").val();
+let asia = $("select[value=asia"] option:selected").val();
+let europe = $("select[value=europe"] option:selected").val();
+let latinAmerica = $("select[value=latinAmerica"] option:selected").val();
+let northAmerica = $("select[value=northAmerica"] option:selected").val();
+let oceania = $("select[value=oceania"] option:selected").val();
+
+let lifeExpectancy = 0
+if (africa) {
+  lifeExpectancy += 62.5
+} else if (asia) {
+  lifeExpectancy += 72.5
+} else if (europe) {
+  lifeExpectancy += 78.5
+} else if (latinAmerica) {
+  lifeExpectancy += 76
+} else if (northAmerica) {
+  lifeExpectancy += 79
+} else {
+  lifeExpectancy += 78
+};
+
+function timeRemaining() {
+  
 }
