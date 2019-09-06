@@ -25,19 +25,15 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      },
-      {
         test: /\.js$/,
                exclude: [
                  /node_modules/,
                  /spec/
                ],
-               loader: "eslint-loader" //this might go one line up, inside the square bracket "Linting Code vs. Setting up Karma." I think this is right like this.
+               loader: "babel-loader",
+               options: {
+                 presets: ['es2015']
+               }
              }
            ]
          }
