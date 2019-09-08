@@ -19,7 +19,7 @@ checkValidity() {
     return mercuryAge;
   };
 };
-
+// LAUREN: MOVE ALL THESE UP AND DO THEM WITH THE ABOVE FORMAT
 // export function calcVenusAge() {
 //   let age = parseInt($('input:text').val());
 //   let mercuryAge = (age / 0.62);
