@@ -8,15 +8,14 @@
     "build": "webpack --mode development",
     "start": "npm run build; webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js",
-    "watch": "webpack --watch",
+    "watch": "webpack --watch"
   },
   "repository": {
-  "type": "git"
+    "type": "git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.5",
