@@ -1,8 +1,8 @@
 import { Age } from './../src/solar-years.js';
-import { calcMercuryAge } from './../src/solar-years.js';
-import { calcVenusAge } from './../src/solar-years.js';
-import { calcMarsAge } from './../src/solar-years.js';
-import { calcJupiterAge } from './../src/solar-years.js';
+// import { calcMercuryAge } from './../src/solar-years.js';
+// import { calcVenusAge } from './../src/solar-years.js';
+// import { calcMarsAge } from './../src/solar-years.js';
+// import { calcJupiterAge } from './../src/solar-years.js';
 
 
 describe ('Age', function(){
@@ -23,28 +23,28 @@ describe ('calcMercuryAge', function(){
      expect(exampleAge3.calcMercuryAge(exampleAge3.age)).toEqual(137.5);
   });
 });
-//
-// describe ('calcVenusAge'), function() {
-//   it('should convert inputted Earth age into Venus age using simple calculation', function() {
-//     let age = "33";
-//     expect (calcVenusAge(age)).toEqual(53.22)
-//   });
-// });
-//
-// describe ('calcMarsAge'), function() {
-//   it('should convert inputted Earth age into Mars age using simple calculation', function() {
-//     let age = "33";
-//     expect (calcMarsAge(age)).toEqual(17.55)
-//   });
-// });
-//
-// describe ('calcJupiterAge'), function() {
-//   it('should convert inputted Earth age into Jupiter age using simple calculation', function() {
-//     let age = "33";
-//     expect (calcJupiterAge(age)).toEqual(2.78)
-//   });
-// });
-//
+
+describe ('calcVenusAge', function(){
+  it('should convert inputted Earth age into Venus age', function() {
+    let exampleAge4 = new Age(33);
+     expect(exampleAge4.calcVenusAge(exampleAge4.age)).toEqual(53.2);
+  });
+});
+
+describe ('calcMarsAge', function(){
+  it('should convert inputted Earth age into Mars age', function() {
+    let exampleAge5 = new Age(33);
+     expect(exampleAge5.calcMarsAge(exampleAge5.age)).toEqual(17.6);
+  });
+});
+
+describe ('calcJupiterAge', function(){
+  it('should convert inputted Earth age into Jupiter age', function() {
+    let exampleAge6 = new Age(33);
+     expect(exampleAge6.calcJupiterAge(exampleAge6.age)).toEqual(137.5);
+  });
+});
+
 // describe ('expectancy'), function() {
 //   it('should calculate life expectancy based on which continent is selected from dropdown  menu')
 //     let exampleExpectancy = africa;

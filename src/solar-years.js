@@ -18,24 +18,21 @@ checkValidity() {
     let mercuryAge = age / 0.24;
     return mercuryAge;
   };
+  calcVenusAge(age) {
+    let venusAge = age / 0.62
+    return venusAge;
+  };
+  calcMarsAge(age) {
+    let marsAge = age/ 1.88;
+    return marsAge;
+  };
+  calcJupiterAge(age) {
+    let jupiterAge = age / 11.86;
+    return jupiterAge;
+  };
 };
-// LAUREN: MOVE ALL THESE UP AND DO THEM WITH THE ABOVE FORMAT
-// export function calcVenusAge() {
-//   let age = parseInt($('input:text').val());
-//   let mercuryAge = (age / 0.62);
-//   return venusAge;
-// }
-// export function calcMarsAge() {
-//   let age = parseInt($('input:text').val());
-//   let mercuryAge = (age / 1.88 );
-//   return marsAge;
-// }
-// export function calcJupiterAge() {
-//   let age = parseInt($('input:text').val());
-//   let mercuryAge = (age / 11.86);
-//   return jupiterAge;
-// }
-//
+
+
 // $(document).ready(function(){
 //   $("form#ageContinent").submit(function(event){
 //     event.preventDefault();
