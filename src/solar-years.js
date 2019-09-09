@@ -85,3 +85,4 @@ checkValidity() {
 //   timeRemaining/11.86
 // }
 // jupiterTimeRemaining(timeremaining);
+// };
