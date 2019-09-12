@@ -14,45 +14,45 @@ export class Age {
     }
     return age;
   }
-  calcMercuryAge(age) {
-    const mercuryAge = age / 0.24;
+  calcMercuryAge() {
+    const mercuryAge = this.age / 0.24;
     return mercuryAge;
   };
-  calcVenusAge(age) {
-    const venusAge = age / 0.62
+  calcVenusAge() {
+    const venusAge = this.age / 0.62
     return venusAge;
   };
-  calcMarsAge(age) {
-    const marsAge = age/ 1.88;
+  calcMarsAge() {
+    const marsAge = this.age/ 1.88;
     return marsAge;
   };
-  calcJupiterAge(age) {
-    const jupiterAge = age / 11.86;
+  calcJupiterAge() {
+    const jupiterAge = this.age / 11.86;
     return jupiterAge;
   };
-  remainingYears(age) {
+  remainingYears() {
     const lifeExpectancy = 80;
-    let timeRemaining = (lifeExpectancy - age);
+    let timeRemaining = (lifeExpectancy - this.age);
     return timeRemaining;
   };
-  remainingMercuryYears(age) {
+  remainingMercuryYears() {
     const lifeExpectancy = 80;
-    let mercuryTimeRemaining = (lifeExpectancy - age) / 0.24;
+    let mercuryTimeRemaining = (lifeExpectancy - this.age) / 0.24;
     return mercuryTimeRemaining;
   };
-  remainingVenusYears(age) {
+  remainingVenusYears() {
     const lifeExpectancy = 80;
-    let venusTimeRemaining = (lifeExpectancy - age) / 0.62;
+    let venusTimeRemaining = (lifeExpectancy - this.age) / 0.62;
     return venusTimeRemaining;
   };
-  remainingMarsYears(age) {
+  remainingMarsYears() {
     const lifeExpectancy = 80;
-    let marsTimeRemaining = (lifeExpectancy - age) / 1.88;
+    let marsTimeRemaining = (lifeExpectancy - this.age) / 1.88;
     return marsTimeRemaining;
   };
-  remainingJupiterYears(age) {
+  remainingJupiterYears() {
     const lifeExpectancy = 80;
-    let jupiterTimeRemaining = (lifeExpectancy - age) / 11.86;
+    let jupiterTimeRemaining = (lifeExpectancy - this.age) / 11.86;
     return jupiterTimeRemaining;
   };
 };

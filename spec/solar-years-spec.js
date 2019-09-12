@@ -40,13 +40,41 @@ describe ('calcMarsAge', function(){
 describe ('calcJupiterAge', function(){
   it('should convert inputted Earth age into Jupiter age', function() {
     let exampleAge6 = new Age(33);
-     expect(exampleAge6.calcJupiterAge(exampleAge6.age)).toEqual(137.5);
+     expect(exampleAge6.calcJupiterAge(exampleAge6.age)).toEqual(2.78);
   });
 });
 
 describe ('remainingYears'), function() {
   it('should calculate remaining life years based on life expectancy age 80')
-    let exampleAge = 33;
-    expect (expectancy(exampleAge).toEqual(47)
+    let exampleAge = new Age(33);
+    expect (remainingYears(exampleAge).toEqual(47.00);
+  });
+});
+
+describe ('remainingMercuryYears'), function() {
+  it('should calculate remaining life years based on life expectancy age 80 and then convert the difference to Mercury years', function() {
+    let exampleAge = new Age(33);
+    expect(remainingMercuryYears(exampleAge).toEqual(195.83);
+  });
+});
+
+describe ('remainingVenusYears'), function() {
+  it('should calculate remaining life years based on life expectancy age 80 and then convert the difference to Venus years', function() {
+    let exampleAge = new Age(33);
+    expect(remainingVenusYears(exampleAge).toEqual(75.80);
+  });
+});
+
+describe ('remainingMarsYears'), function() {
+  it('should calculate remaining life years based on life expectancy age 80 and then convert the difference to Mars years', function() {
+    let exampleAge = new Age(33);
+    expect(remainingMarsYears(exampleAge).toEqual(25.00);
+  });
+});
+
+describe ('remainingJupiterYears'), function() {
+  it('should calculate remaining life years based on life expectancy age 80 and then convert the difference to Jupiter years', function() {
+    let exampleAge = new Age(33);
+    expect(remainingJupiterYears(exampleAge).toEqual(3.96);
   });
 });
