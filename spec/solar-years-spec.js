@@ -12,34 +12,34 @@ describe ('Age', function(){
   });
   it('should not accept non-numerical input', function(){
     let exampleAge2 = new Age(33);
-    expect(exampleAge2.checkValidity()).toBe(true);
+    expect(exampleAge.checkValidity()).toBe(true);
   });
 });
 
 describe ('calcMercuryAge', function(){
   it('should convert inputted Earth age into Mercury age', function() {
     let exampleAge3 = new Age(33);
-     expect(exampleAge3.calcMercuryAge(exampleAge3.age)).toEqual(137.5);
+     expect(exampleAge.calcMercuryAge(exampleAge3.age)).toEqual(137.5);
   });
 });
 
 describe ('calcVenusAge', function(){
   it('should convert inputted Earth age into Venus age', function() {
     let exampleAge4 = new Age(33);
-     expect(exampleAge4.calcVenusAge(exampleAge4.age)).toEqual(53.2);
+     expect(exampleAge.calcVenusAge(exampleAge4.age)).toEqual(53.2);
   });
 });
 
 describe ('calcMarsAge', function(){
   it('should convert inputted Earth age into Mars age', function() {
     let exampleAge5 = new Age(33);
-     expect(exampleAge5.calcMarsAge(exampleAge5.age)).toEqual(17.6);
+     expect(exampleAge.calcMarsAge(exampleAge5.age)).toEqual(17.6);
   });
 });
 
 describe ('calcJupiterAge', function(){
   it('should convert inputted Earth age into Jupiter age', function() {
-    let exampleAge6 = new Age(33);
+    let exampleAge = new Age(33);
      expect(exampleAge6.calcJupiterAge(exampleAge6.age)).toEqual(2.78);
   });
 });
