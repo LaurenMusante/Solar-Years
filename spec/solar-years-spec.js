@@ -1,8 +1,8 @@
 import { Age } from './../src/solar-years.js';
-// import { calcMercuryAge } from './../src/solar-years.js';
-// import { calcVenusAge } from './../src/solar-years.js';
-// import { calcMarsAge } from './../src/solar-years.js';
-// import { calcJupiterAge } from './../src/solar-years.js';
+import { calcMercuryAge } from './../src/solar-years.js';
+import { calcVenusAge } from './../src/solar-years.js';
+import { calcMarsAge } from './../src/solar-years.js';
+import { calcJupiterAge } from './../src/solar-years.js';
 
 
 describe ('Age', function(){
@@ -15,7 +15,6 @@ describe ('Age', function(){
     expect(exampleAge2.checkValidity()).toBe(true);
   });
 });
-
 
 describe ('calcMercuryAge', function(){
   it('should convert inputted Earth age into Mercury age', function() {
@@ -45,24 +44,9 @@ describe ('calcJupiterAge', function(){
   });
 });
 
-// describe ('expectancy'), function() {
-//   it('should calculate life expectancy based on which continent is selected from dropdown  menu')
-//     let exampleExpectancy = africa;
-//     expect (expectancy(africa).toEqual(62.5)
-//   });
-// });
-//
-// describe ('remainingYears'), function() {
-//   it('should calcuate remaining years in life based on a the age of user and continental residence')
-//     let lifeExpectancy = 72.5
-//     let age = 33
-//     expect (remainingYears().toEqual)(39.5)
-//   });
-// });
-//
-// describe ('mercuryTimeRemaining'), function() {
-//   it('should convert timeRemaining from Earth years to Mercury years')
-//     let timeRemaining = 39.5
-//     expect (mercuryTimeRemaining(timeRemaining).toEqual)(164.58)
-//   });
-// });
+describe ('remainingYears'), function() {
+  it('should calculate remaining life years based on life expectancy age 80')
+    let exampleAge = 33;
+    expect (expectancy(exampleAge).toEqual(47)
+  });
+});
